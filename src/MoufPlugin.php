@@ -18,7 +18,7 @@ use Composer\EventDispatcher\EventSubscriberInterface;
  * RootContainer Installer for Composer.
  * (based on RobLoach's code for ComponentInstaller)
  */
-class MoufPlugin implements PluginInterface, EventSubscriberInterface {
+class MoufPlugin implements PluginInterface {
 
 	public function activate(Composer $composer, IOInterface $io) {
 		$moufLibraryInstaller = new MoufLibraryInstaller($io, $composer);
